@@ -100,12 +100,7 @@ const ComputersCanvas = () =>{
     // add the callback function  as a listener for change to media query
     // adding event listener for for change in screen size
     mediaQuery.addEventListener('change', handleMediaQueryChange);
-    if(isMobile=== true){
-      // getting our  desktop or computer scene
-      setModel("./desktop_pc/scene.gltf");}
-      else{
-        setModel("./space_exploration_wlp_series_8/scene.gltf");
-      }
+    
     
     // as we are in UseEffect we also need to remove to event listener
   // Anywhere removing event listener is recommended as you don't want the event to get triggered multiple times without any reason
@@ -115,6 +110,12 @@ const ComputersCanvas = () =>{
 
 
   },[])
+  if(isMobile=== true){
+    // getting our  desktop or computer scene
+    setModel("./desktop_pc/scene.gltf");}
+    else{
+      setModel("./space_exploration_wlp_series_8/scene.gltf");
+    }
   
   return (
 
