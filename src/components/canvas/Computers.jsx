@@ -27,7 +27,7 @@ const Computers = ( { isMobile, model } ) => {
 
 
 
-  const computer = useGLTF(model);
+  const computer = useGLTF("./desktop_pc/scene.gltf");
   
 
 
@@ -110,12 +110,7 @@ const ComputersCanvas = () =>{
 
 
   },[])
-  if(isMobile=== true){
-    // getting our  desktop or computer scene
-    setModel("./desktop_pc/scene.gltf");}
-    else{
-      setModel("./space_exploration_wlp_series_8/scene.gltf");
-    }
+ 
   
   return (
 
