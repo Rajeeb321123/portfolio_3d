@@ -16,9 +16,9 @@ const Hero = ({isMobile}) => {
 
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={` relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto  ${styles.paddingX} flex flex-row items-start gap-5 z-1`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -33,10 +33,11 @@ const Hero = ({isMobile}) => {
             I develop MERN web application  <br className='sm:block hidden' />
             and three js web application
           </p>
+          {isMobile && (<p className="text-red-400   "> !!! Please look at my portfolio from PC . I was unable to show all of my 3d models and tilt fuctionality of card in mobile as the browser kept on crashing and showing blank white sheet in mobile devices</p>)}
         </div>
       </div>
 
-
+      
       { !isMobile ? (<RocketsCanvas/>):(
         <ComputersCanvas/>
         // <><p className="text-red-400 absolute mt-[400px] mr-5 ml-5">I was unable to show full size of  the 3d rocket model as it will most likely crash the browser or show white blank sheet in mobile devies.&nbsp; Please use Desktop or laptop for this 3d website</p>
