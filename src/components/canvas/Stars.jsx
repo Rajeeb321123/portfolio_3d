@@ -22,7 +22,8 @@ const Stars = ( props ) => {
   const ref = useRef();
   
   // creating shpere
-  const sphere = random.inSphere(new Float32Array(13000), { radius:1.2} )
+  let sphere = null;
+ { props.ismobile? sphere = random.inSphere(new Float32Array(13000), { radius:1.2} ): sphere = random.inSphere(new Float32Array(4000), { radius:1.2} )}
 
   // useFrame for moving  the stars frame by frame
   useFrame((state, delta) => {
