@@ -23,12 +23,10 @@ import CanvasLoader from '../Loader';
 
 
 
-const Computers = ( { isMobile, model } ) => {
+const Computers = ( { isMobile } ) => {
 
-
-
-  const computer = useGLTF("./desktop_pc/scene.gltf");
-  
+  // getting our  desktop or computer scene
+  const computer = useGLTF("./space_exploration_wlp_series_8/scene.gltf");
 
 
   return (
@@ -77,7 +75,6 @@ const ComputersCanvas = () =>{
 
   // for mobile screen 
   const [isMobile, setIsMobile] = useState(false)
-  const [model, setModel] = useState("")
 
 
   // using useEffect to change isMobile state without using external libraries unlike we did in our dashboard project with MUI
@@ -101,7 +98,6 @@ const ComputersCanvas = () =>{
     // adding event listener for for change in screen size
     mediaQuery.addEventListener('change', handleMediaQueryChange);
     
-    
     // as we are in UseEffect we also need to remove to event listener
   // Anywhere removing event listener is recommended as you don't want the event to get triggered multiple times without any reason
     return () => {
@@ -110,7 +106,6 @@ const ComputersCanvas = () =>{
 
 
   },[])
- 
   
   return (
 
@@ -142,7 +137,7 @@ const ComputersCanvas = () =>{
         />
 
         {/* RENDERING THE COMPUTER COMPONENT HERE */}
-        <Computers isMobile={isMobile} model={model} />
+        <Computers isMobile={isMobile} />
 
       </Suspense>
 

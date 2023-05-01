@@ -22,7 +22,7 @@ const App = () => {
           <Contact />
           
         </div>
-        {/* <StarsCanvas /> */}
+        <StarsCanvas />
       </div>
     </BrowserRouter>
   );
