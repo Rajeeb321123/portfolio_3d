@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 // IMPORTING OUR 3d COMPUTER CANVAS
-import { ComputersCanvas } from "./canvas";
+import { ComputersCanvas, EarthCanvas } from "./canvas";
 
 
 const Hero = () => {
@@ -68,7 +68,10 @@ const Hero = () => {
 
 
       { !isMobile ? (<ComputersCanvas />):(
-        <p className="text-red-400 absolute mt-[400px] mr-5 ml-5">I was unable to show the 3d rocket model as it will most likely crash the browser in mobile devies.&nbsp; Please use Desktop or laptop for this 3d website</p>
+        <><p className="text-red-400 absolute mt-[400px] mr-5 ml-5">I was unable to show full size of  the 3d rocket model as it will most likely crash the browser or show white blank sheet in mobile devies.&nbsp; Please use Desktop or laptop for this 3d website</p>
+        <div className=" absolute mt-[400px] mr-5 ml-5 w-40 h-40"><ComputersCanvas /></div>
+        </>
+        
       )}
       
 
