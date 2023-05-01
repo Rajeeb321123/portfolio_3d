@@ -1,0 +1,28 @@
+3-js:                   powerfull 3d graphic library for  rendering  and animating for 3d models
+react 3 fiber: p        opular library for 3d graphic for react with 3js
+tailwind Css
+Framer Motion:          For animation in react
+Load_Create_Customize:  3d models and Geometries with various light
+Camera and Postions
+Email Js:               for sending email from our website 
+Higher order component: Here we have SectionWrapper in our code
+
+
+
+
+Tips:
+npm i --legacy-peer-deps is used if any other package uses old react . here for react-tilt
+
+PACKAGES:
+npm i --legacry-peer-deps
+ three
+ @react-three/fiber: 
+ @react-three/drei
+ maath:                             math base utility fuction for many geometries
+ react-tilt:                        cool animation when hovering over card
+ react-vertical-timeline-component: for experience similar to linkedin
+ @emailjs/browser:                  
+ framer-motion
+ react-router-dom
+
+
