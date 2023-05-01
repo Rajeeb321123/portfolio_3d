@@ -51,16 +51,17 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        
+        {!isMobile && (<Tech isMobile= {isMobile} />)}
         <Works />
         {/* <Feedbacks /> */}
 
         <div className='relative z-0'>
           <Contact />
-          {isMobile && (<StarsCanvas />)}
+          {isMobile && (<StarsCanvas isMobile={isMobile} />)}
         </div>
 
-        {!isMobile && (<StarsCanvas />)}
+        {!isMobile && (<StarsCanvas isMobile= {isMobile} />)}
         
       </div>
     </BrowserRouter>
