@@ -25,8 +25,13 @@ import CanvasLoader from '../Loader';
 
 const Computers = ( { isMobile } ) => {
 
+
+  if(isMobile=== true){
   // getting our  desktop or computer scene
-  const computer = useGLTF("./space_exploration_wlp_series_8/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene.gltf");}
+  else{
+    const computer = useGLTF("./space_exploration_wlp_series_8/scene.gltf");
+  }
 
 
   return (
