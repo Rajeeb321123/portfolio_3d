@@ -5,6 +5,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 
 const App = () => {
 
+  console.log("It may to crash on chrome for  mobile as it canot handle the polygon from 3d model. It may lead to need of reinstall of chrome for using again if crashed. It will work for brave browser for mobile. I have tried to make it work on mobile devices for brave browser as it is most powerful browser for mobile . Still I had to remove  many 3d models . I highly recommend to only use it on Pc so I am able to show  all the 3d models ");
 
 
   const [isMobile, setIsMobile] = useState(false)
