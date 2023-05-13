@@ -1,7 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
-import { useEffect,useState } from "react";
+import { useEffect, useState} from "react";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import VideoPopup from "./components/VideoPop";
+import { GameProvider } from "./components/Context";
 
 const App = () => {
 
@@ -12,7 +14,7 @@ const App = () => {
 
 
   // using useEffect to change isMobile state without using external libraries unlike we did in our dashboard project with MUI
-  useEffect(()=> {
+  useEffect(() => {
 
     // using mediaquery to know we are on mobile device
     // checking the window size and matching it
@@ -31,41 +33,59 @@ const App = () => {
     // add the callback function  as a listener for change to media query
     // adding event listener for for change in screen size
     mediaQuery.addEventListener('change', handleMediaQueryChange);
-    
+
     // as we are in UseEffect we also need to remove to event listener
-  // Anywhere removing event listener is recommended as you don't want the event to get triggered multiple times without any reason
+    // Anywhere removing event listener is recommended as you don't want the event to get triggered multiple times without any reason
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     }
 
 
-  },[])
+  }, [])
   return (
 
-    
+
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className={isMobile?'bg-hero-pattern bg-cover bg-no-repeat bg-center':''}>
-          <Navbar />
-          <Hero isMobile= {isMobile}/>
+    
+        <div className='relative z-0 bg-primary'>
+
           
-        </div>
-        <About />
-        <Experience />
-        
-        {!isMobile && (<Tech isMobile= {isMobile} />)}
-        <Works />
-        {/* <Feedbacks /> */}
 
-        <div className='relative z-0'>
-          <Contact />
-          {isMobile && (<StarsCanvas isMobile={isMobile} />)}
+
+
+          <div className={isMobile ? 'bg-hero-pattern bg-cover bg-no-repeat bg-center' : ''}>
+            <Navbar />
+            <Hero isMobile={isMobile} />
+
+          </div>
+          <About />
+          <Experience />
+
+          {!isMobile && (<Tech isMobile={isMobile} />)}
+
+          <GameProvider>
+            {/* videoPopUP */}
+          <div className="w-[100%] mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-[20px] pr-[20px]">
+            <VideoPopup
+              
+            />
+          </div>
+          <Works  />
+          </GameProvider>
+          
+          {/* <Feedbacks /> */}
+
+          <div className='relative z-0'>
+            <Contact />
+            {isMobile && (<StarsCanvas isMobile={isMobile} />)}
+          </div>
+
+          {!isMobile && (<StarsCanvas isMobile={isMobile} />)}
+
         </div>
 
-        {!isMobile && (<StarsCanvas isMobile= {isMobile} />)}
-        
-      </div>
-    </BrowserRouter>
+    
+      </BrowserRouter>
   );
 }
 

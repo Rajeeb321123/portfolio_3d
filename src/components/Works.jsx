@@ -7,6 +7,8 @@ import { github, arrow, youtube } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { GameContext,GameProvider } from "./Context";
+
 
 const ProjectCard = ({
   index,
@@ -17,7 +19,15 @@ const ProjectCard = ({
   source_code_link,
   website_link,
   youtube_link,
+  
 }) => {
+  const { show, videoId } = React.useContext(GameContext);
+  const [showValue, setShowValue] = show;
+  const [videoIdValue, setVideoIdValue] = videoId;
+
+ 
+
+
 
 
   return (
@@ -48,7 +58,8 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
-            <div
+
+            {/* <div
               onClick={() => window.open(youtube_link, "_blank")}
               className=' mr-2 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
@@ -57,7 +68,21 @@ const ProjectCard = ({
                 alt='source code'
                 className='w-[90%] h-[90%] object-contain'
               />
+            </div> */}
+            <div
+              onClick={() => {
+                setVideoIdValue(youtube_link);
+                setShowValue(true);
+            }}
+              className=' mr-2 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={youtube}
+                alt='source code'
+                className='w-[90%] h-[90%] object-contain'
+              />
             </div>
+
            {name !== "Moment_PhotoSharing" && <div
               onClick={() => window.open(website_link, "_blank")}
               className=' w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -92,6 +117,9 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+
+  
+ 
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -114,7 +142,7 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={`project-${index}`} index={index}   {...project} />
         ))}
       </div>
     </>

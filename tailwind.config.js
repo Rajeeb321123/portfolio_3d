@@ -18,6 +18,14 @@ module.exports = {
       },
       screens: {
         xs: "450px",
+        'sm': '576px',
+      // => @media (min-width: 576px) { ... }
+
+      'md': '960px',
+      // => @media (min-width: 960px) { ... }
+
+      'lg': '1000px',
+      // => @media (min-width: 1440px) { ... }
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
