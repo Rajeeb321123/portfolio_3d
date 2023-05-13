@@ -35,7 +35,7 @@ const Rockets = ( { isMobile } ) => {
 
 {/* Main brightening light  */}
       <spotLight
-        position={[-20, 50, 10]}
+        position={[20, 45, 10]}
         angle={0.12}
         penumbra={1}
         intensity={1}
