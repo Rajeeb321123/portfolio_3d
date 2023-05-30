@@ -19,6 +19,7 @@ const ProjectCard = ({
   source_code_link,
   website_link,
   youtube_link,
+ 
   
 }) => {
   const { show, videoId } = React.useContext(GameContext);
@@ -40,12 +41,13 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[100px]  md:h-[230px]'>
           <img
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
+          
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -116,12 +118,12 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Works = ({isMobile}) => {
 
   
  
   return (
-    <>
+    <div className="">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -142,11 +144,11 @@ const Works = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index}   {...project} />
+          <ProjectCard key={`project-${index}`} index={index}   {...project} isMobile={isMobile}/>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

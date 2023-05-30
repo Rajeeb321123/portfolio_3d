@@ -24,6 +24,7 @@ import {
     dashboard,
     threejs,
     moment,
+    jobmie
   } from "../assets";
   
   export const navLinks = [
@@ -168,28 +169,41 @@ import {
   ];
   
   const projects = [
+    
     {
-      name: "CareFree_VideoSharing",
+      name: "Jobmie",
       description:
-        "Web-based Social meida platform that allows users to share videos , login with google login , comment and like the post.",
+        "Jobmie is  services marketplace that connects businesses with freelancers offering digital services in over different categories ",
       tags: [
+
         {
-          name: "nextjs and typescript",
+          name: "React",
           color: "blue-text-gradient",
         },
+
         {
-          name: "Sanity_backend",
-          color: "green-text-gradient",
+          name:"MERN",
+          color: "green-text-gradient"
+        },
+
+        {
+          name:"Cloudinary",
+          color:"orange-text-gradient"
+        },
+
+        {
+          name:"react-query",
+          color:""
         },
         {
-          name: "tailwind",
+          name: "scss",
           color: "pink-text-gradient",
         },
       ],
-      image: careFree,
-      source_code_link: "https://github.com/Rajeeb321123/carefree",
-      website_link: "https://carefree.vercel.app/",
-      youtube_link: "https://youtu.be/_6fI9P10vKc",
+      image: jobmie,
+      source_code_link: "https://github.com/Rajeeb321123/fullstack-Jobmie",
+      website_link: "https://jobmie.vercel.app/",
+      youtube_link: "https://youtu.be/7W5q2wP4vjE",
     },
     {
       name: "MovieInfo",
@@ -200,7 +214,10 @@ import {
           name: "react",
           color: "blue-text-gradient",
         },
-        
+          {
+          name:"TDMB api",
+          color:"orange-text-gradient"
+        },
         {
           name: "scss",
           color: "pink-text-gradient",
@@ -224,6 +241,12 @@ import {
           name: "MERN",
           color: "green-text-gradient",
         },
+
+        {
+          name:"redux-query",
+          color:""
+        },
+
         {
           name: "Material UI",
           color: "pink-text-gradient",
@@ -257,6 +280,30 @@ import {
       website_link: "https://github.com/Rajeeb321123/momentSocialMedia_mern",
       youtube_link: "https://youtu.be/FtKPHwBQ5JU",
     },
+    {
+      name: "CareFree_VideoSharing",
+      description:
+        "Web-based Social meida platform that allows users to share videos , login with google login , comment and like the post.",
+      tags: [
+        {
+          name: "nextjs and typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Sanity_backend",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: careFree,
+      source_code_link: "https://github.com/Rajeeb321123/carefree",
+      website_link: "https://carefree.vercel.app/",
+      youtube_link: "https://youtu.be/_6fI9P10vKc",
+    },
+   
   ];
   
   export { services, technologies, experiences, testimonials, projects };

@@ -32,6 +32,7 @@ import dashboard from "./dashboard.png";
 import moment from './moment.png';
 import arrow from './arrow.png';
 import youtube from './video.png'
+import jobmie from "./jobmie.png"
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   moment,
   arrow,
   youtube,
+  jobmie
 };

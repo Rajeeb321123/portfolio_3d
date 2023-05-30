@@ -70,7 +70,7 @@ const App = () => {
               
             />
           </div>
-          <Works  />
+          <Works  isMobile={isMobile}/>
           </GameProvider>
           
           {/* <Feedbacks /> */}
