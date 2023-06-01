@@ -115,12 +115,12 @@ import {
       company_name: "Self_learnt",
       icon: reactjs,
       iconBg: "#383E56",
-      date: "November 2022 - Present (6month)",
+      date: "November 2022 - Present ( 6months )",
       points: [
         "Developing and learning web applications using React.js and other related technologies.",
         "Exploring related librabies and packages",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "ReduxToolkit, Api calls , Redux toolkit query , SCSS(beginner), NextJs(beginner), TypeScript(beginner) ",
+        "ReduxToolkit, React and Redux toolkit query , SCSS , NextJs(beginner), TypeScript(beginner) ",
         "Error and  problems solving ",
       ],
     },
@@ -130,7 +130,7 @@ import {
       company_name: "Self_learnt",
       icon: mongodb,
       iconBg: "#E6DEDD",
-      date: "December 2023 - Present ( 5 month )",
+      date: "November - Present ( 6 months )",
       points: [
         "Developing and maintaining web applications using React.js and MERN  ",
         "Implementing responsive design and ensuring cross-browser compatibility.",
