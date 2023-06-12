@@ -173,7 +173,7 @@ import {
     {
       name: "Jobmie",
       description:
-        "Jobmie is  services marketplace that connects businesses with freelancers offering digital services in over different categories ",
+        "Jobmie is  services marketplace that connects businesses with freelancers offering digital services in over different categories. Funcalities: Stripe order, gigs creation , Conversation between buyer and seller",
       tags: [
 
         {
