@@ -214,7 +214,7 @@ import {
     {
       name: "Jobmie",
       description:
-        "Jobmie (fiverr clone) is  services marketplace that connects businesses with freelancers offering digital services like Stripe payment, messaging, gigs upload. ",
+        "Jobmie (fiverr clone) is  services marketplace that connects businesses with freelancers offering digital services like Stripe payment, messaging, gigs upload, comment and rating ",
       tags: [
 
         {
@@ -239,6 +239,10 @@ import {
         {
           name: "scss",
           color: "pink-text-gradient",
+        },
+        {
+          name: "Stripe",
+          color: "text-fuchsia-800",
         },
       ],
       image: jobmie,
