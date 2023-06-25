@@ -23,8 +23,9 @@ import {
     careFree,
     dashboard,
     threejs,
-    moment,
-    jobmie
+    sunshinefly,
+    jobmie,
+    nextjs
   } from "../assets";
   
   export const navLinks = [
@@ -83,12 +84,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: 'Next.js',
+      icon: nextjs,
     },
     {
       name: "Node JS",
@@ -97,6 +94,14 @@ import {
     {
       name: "MongoDB",
       icon: mongodb,
+    },
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
       name: "Three JS",
@@ -111,16 +116,16 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "React.js and Next.js Developer",
       company_name: "Self_learnt",
       icon: reactjs,
       iconBg: "#383E56",
-      date: "November 2022 - Present ( 6months )",
+      date: "November 2022 - Present ( 7 months )",
       points: [
-        "Developing and learning web applications using React.js and other related technologies.",
+        "Developing and learning web applications using Next.js,React.js and other related technologies.",
         "Exploring related librabies and packages",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "ReduxToolkit, React and Redux toolkit query , SCSS , NextJs(beginner), TypeScript(beginner) ",
+        "ReduxToolkit, React and Redux toolkit query , SCSS, Primsa, NextJs, TypeScript",
         "Error and  problems solving ",
       ],
     },
@@ -130,12 +135,13 @@ import {
       company_name: "Self_learnt",
       icon: mongodb,
       iconBg: "#E6DEDD",
-      date: "November - Present ( 6 months )",
+      date: "November - Present ( 7 months )",
       points: [
-        "Developing and maintaining web applications using React.js and MERN  ",
+        "Developing and maintaining web applications using MERN Stack  and noSql database",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Aggregation and Pagination",
-        "Making sure proper ease of communication for calls and response between backend and Frontend"
+        "ServerSide Aggregation and Pagination",
+        "MONGOOSE",
+        "Making sure good communication for calls and response between backend and Frontend"
 
       ],
     },
@@ -171,9 +177,44 @@ import {
   const projects = [
     
     {
+      name: "SunshineFly",
+      description:
+        "SunshineFly is an airbnb clone. This is my largest project yet.",
+      tags: [
+
+        {
+          name: "Next.js",
+          color: "blue-text-gradient",
+        },
+
+        {
+          name:"Prisma",
+          color: "green-text-gradient"
+        },
+
+        {
+          name:"Cloudinary",
+          color:"orange-text-gradient"
+        },
+
+        {
+          name:"Mongodb",
+          color:""
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: sunshinefly,
+      source_code_link: "https://github.com/Rajeeb321123/SunshineFly-airbnbClone",
+      website_link: "https://sunshinefly.vercel.app/",
+      youtube_link: "https://youtu.be/NyT-cSqOCug",
+    },
+    {
       name: "Jobmie",
       description:
-        "Jobmie is  services marketplace that connects businesses with freelancers offering digital services over different categories with Stripe payment & messaging",
+        "Jobmie (fiverr clone) is  services marketplace that connects businesses with freelancers offering digital services like Stripe payment, messaging, gigs upload. ",
       tags: [
 
         {
@@ -192,7 +233,7 @@ import {
         },
 
         {
-          name:"react-query",
+          name:"tanstack-react-query",
           color:""
         },
         {
@@ -202,7 +243,7 @@ import {
       ],
       image: jobmie,
       source_code_link: "https://github.com/Rajeeb321123/fullstack-Jobmie",
-      website_link: "https://jobmie.vercel.app/",
+      website_link: "https://jobmie.onrender.com/",
       youtube_link: "https://youtu.be/7W5q2wP4vjE",
     },
     {
@@ -257,29 +298,7 @@ import {
       website_link: "https://dashboardmern-frontend.onrender.com/",
       youtube_link: "https://youtu.be/acBrX9zBtVc",
     },
-    {
-      name: "Moment_PhotoSharing",
-      description:(
-        "Web-based Social meida platform that allows users to share photo with login fuctionality , comment and like the post. Sorry I have no deployed website as I deleted the mongodb free cluster for my next project. But I have the demo in Youtube link"),
-      tags: [
-        {
-          name: "React",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "MERN",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Material UI",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: moment,
-      source_code_link: "https://github.com/Rajeeb321123/momentSocialMedia_mern",
-      website_link: "https://github.com/Rajeeb321123/momentSocialMedia_mern",
-      youtube_link: "https://youtu.be/FtKPHwBQ5JU",
-    },
+ 
     {
       name: "CareFree_VideoSharing",
       description:

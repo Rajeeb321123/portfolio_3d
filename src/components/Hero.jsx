@@ -31,7 +31,7 @@ const Hero = ({isMobile}) => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop MERN web application  <br className='sm:block hidden' />
-            and three js web application
+            and Next.js web application
           </p>
           {isMobile && (<p className="text-red-400   "> !!! Please look at my portfolio from PC . I was unable to show all of my 3d models and tilt fuctionality of card in mobile as the browser kept on crashing and showing blank white sheet in mobile devices</p>)}
         </div>

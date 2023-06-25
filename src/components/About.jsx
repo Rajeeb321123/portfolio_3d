@@ -70,7 +70,7 @@ const About = () => {
         className = ' mt-4 text-secondary text-[16px] max-w-3xl leading-[28px]  '  
       >
         
-        I am a beginner software developer who has a passion for learning new technologies and solving challenging problems. I have experience in developing web applications using HTML, CSS, JavaScript and typescript(beginner). I have experience on framework like React, Node.js ,NEXT.js(beginner) , Three.js(beginner) and Express.js, and expertise on MERN stack development, Sanity backend development. I am always eager to expand my skills and knowledge by taking online courses, reading books and blogs and building new projects. I am looking for an opportunity to join a dynamic and innovative team where I can contribute to the development of cutting-edge software solutions and grow as a professional.
+        I am a software developer who has a passion for learning new technologies and solving challenging problems. I have experience in developing web applications using HTML, CSS, JavaScript and typescript. I have experience on framework like React, Node.js ,NEXT.js, Three.js(beginner) and Express.js, and expertise on MERN stack development, Sanity backend development. I am always eager to expand my skills and knowledge by taking online courses, reading books and blogs and building new projects. I am looking for an opportunity to join a dynamic and innovative team where I can contribute to the development of cutting-edge software solutions and grow as a professional.
       </motion.p>
 
       {/* for displaying the card */}

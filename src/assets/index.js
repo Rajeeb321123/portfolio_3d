@@ -29,10 +29,12 @@ import tesla from "./company/tesla.png";
 import movieInfo from "./movieInfo.png";
 import careFree from "./careFree.png";
 import dashboard from "./dashboard.png";
-import moment from './moment.png';
+
 import arrow from './arrow.png';
 import youtube from './video.png'
 import jobmie from "./jobmie.png"
+import sunshinefly from './sunshinefly.png';
+import nextjs from './tech/next.js.png';
 
 export {
   logo,
@@ -63,8 +65,9 @@ export {
   movieInfo,
   careFree,
   dashboard,
-  moment,
+  sunshinefly,
   arrow,
   youtube,
-  jobmie
+  jobmie,
+  nextjs
 };
